@@ -1,0 +1,20 @@
+{
+  "name": "revproxnew",
+  "version": "0.0.1",
+  "description": "reverse proxy node server",
+  "main": "app.js",
+  "dependencies": {
+    "shortid": "~2.0.0",
+    "http-auth": "~2.1.5",
+	"async": "~0.2.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":   { "type" : "git"
+  , "url" : "http://github.com/Numbers11/revproxnew.git"
+  },
+  "author": "Zephyr",
+  "license": "BSD"
+}
