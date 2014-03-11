@@ -94,8 +94,8 @@ var proxysvr = socks.createServer(username, password, function(socket, port, add
 proxysvr.listen(0, function() {
 	process.send({"type" : "port", "port" : proxysvr.address().port, "username" : username, "password" : password});
 });
-
-setInterval(function() { console.log('proxy---------------------'); console.log(util.inspect(clients, { showHidden: true, depth: 1 })) ;console.log('aaa---------------------');}, 5000)
+//debug stuff
+//setInterval(function() { console.log('proxy---------------------'); console.log(util.inspect(clients, { showHidden: true, depth: 1 })) ;console.log('aaa---------------------');}, 5000)
 
 //suicide if parent dies
 process.on('disconnect', function() {

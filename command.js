@@ -87,8 +87,8 @@ net.createServer(function (socket) {
 	});	
 }).listen(config.commandport);
 console.log("Command server running at port", config.commandport);
-
-setInterval(function() { console.log('command---------------------'); console.log(util.inspect(clients, { showHidden: true, depth: 0 })) ;console.log('www---------------------');}, 5000);
+//debug stuff
+//setInterval(function() { console.log('command---------------------'); console.log(util.inspect(clients, { showHidden: true, depth: 0 })) ;console.log('www---------------------');}, 5000);
 
 
 module.exports.getProxys = function(cb) {
